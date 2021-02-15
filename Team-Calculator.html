@@ -14,115 +14,98 @@
             if (event.which === 97 || event.which === 49) {
                 event.preventDefault();
                 document.querySelector('#pressOne').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                calculator.appendNumber(1)
-                calculator.updateDisplay()
+
             } else {
                 if (event.which === 98 || event.which === 50) {
                     event.preventDefault();
                     document.querySelector('#pressTwo').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                    calculator.appendNumber(2)
-                    calculator.updateDisplay()
+
                 } else {
                     if (event.which === 99 || event.which === 51) {
                         event.preventDefault();
                         document.querySelector('#pressThree').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                        calculator.appendNumber(3)
-                        calculator.updateDisplay()
+
                     } else {
                         if (event.which === 100 || event.which === 52) {
                             event.preventDefault();
                             document.querySelector('#pressFour').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                            calculator.appendNumber(4)
-                            calculator.updateDisplay()
+
                         } else {
                             if (event.which === 101 || event.which === 53) {
                                 event.preventDefault();
                                 document.querySelector('#pressFive').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                calculator.appendNumber(5)
-                                calculator.updateDisplay()
+
                             } else {
                                 if (event.which === 102 || event.which === 54) {
                                     event.preventDefault();
                                     document.querySelector('#pressSix').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                    calculator.appendNumber(6)
-                                    calculator.updateDisplay()
+
                                 } else {
                                     if (event.which === 103 || event.which === 55) {
                                         event.preventDefault();
                                         document.querySelector('#pressSeven').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                        calculator.appendNumber(7)
-                                        calculator.updateDisplay()
+
                                     } else {
                                         if (event.which === 104 || event.which === 56) {
                                             event.preventDefault();
                                             document.querySelector('#pressEight').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                            calculator.appendNumber(8)
-                                            calculator.updateDisplay()
+
                                         } else {
                                             if (event.which === 105 || event.which === 57) {
                                                 event.preventDefault();
                                                 document.querySelector('#pressNine').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                                calculator.appendNumber(9)
-                                                calculator.updateDisplay()
+
                                             } else {
                                                 if (event.which === 48 || event.which === 96) {
                                                     event.preventDefault();
                                                     document.querySelector('#pressZero').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                                    calculator.appendNumber(0)
-                                                    calculator.updateDisplay()
+
                                                 } else {
                                                     if (event.which === 107) {
                                                         event.preventDefault();
                                                         document.querySelector('#pressPlus').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                                        calculator.chooseOperation('+')
-                                                        calculator.updateDisplay()
+
                                                     } else {
                                                         if (event.which === 109) {
                                                             event.preventDefault();
                                                             document.querySelector('#pressMinus').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                                            calculator.chooseOperation('-')
-                                                            calculator.updateDisplay()
+
                                                         } else {
                                                             if (event.which === 106) {
                                                                 event.preventDefault();
                                                                 document.querySelector('#pressMul').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                                                calculator.chooseOperation('*')
-                                                                calculator.updateDisplay()
+
                                                             } else {
                                                                 if (event.which === 111) {
                                                                     event.preventDefault();
                                                                     document.querySelector('#pressDiv').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                                                    calculator.chooseOperation('/')
-                                                                    calculator.updateDisplay()
+
                                                                 } else {
                                                                     if (event.which === 13) {
                                                                         event.preventDefault();
                                                                         document.querySelector('#pressEqual').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                                                        calculator.compute();
-                                                                        calculator.updateDisplay();
+
                                                                     } else {
                                                                         if (event.which === 46) {
                                                                             event.preventDefault();
                                                                             document.querySelector('#pressAc').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                                                            calculator.clear();
-                                                                            calculator.updateDisplay();
+
                                                                         } else {
                                                                             if (event.which === 190 || event.which === 110) {
                                                                                 event.preventDefault();
                                                                                 document.querySelector('#pressDot').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                                                                calculator.appendNumber('.')
-                                                                                calculator.updateDisplay()
+
                                                                             } else {
                                                                                 if (event.which === 8) {
                                                                                     event.preventDefault();
                                                                                     document.querySelector('#pressDel').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                                                                    calculator.delete();
-                                                                                    calculator.updateDisplay();
                                                                                 }
                                                                                 else {
-                                                                                    if (event.code == 'KeyS' && (event.shiftKey)) {
+                                                                                    if (event.code == 'KeyS') {
+                                                                                        resultview.value = Math.sqrt(resultview.value);
                                                                                         document.querySelector('#pressSquare').style.cssText = "background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));";
-                                                                                    } else {
+                                                                                    }
+                                                                                    else {
                                                                                         return
                                                                                     }
                                                                                 }
@@ -235,7 +218,7 @@
                                                                                     document.querySelector('#pressDel').style.cssText = "";
                                                                                 }
                                                                                 else {
-                                                                                    if (event.code == 'KeyS' && (event.shiftKey)) {
+                                                                                    if (event.code == 'KeyS') {
                                                                                         document.querySelector('#pressSquare').style.cssText = "";
                                                                                     } else {
                                                                                         return

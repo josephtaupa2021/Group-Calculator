@@ -149,7 +149,6 @@ function equal() {
     } else {
         document.form.resultview.value = eval(outputs);
     }
-
 }
 
 function Clear() {
@@ -180,8 +179,6 @@ function theme1() {
     bg.document.body.style.backgroundSize = "cover";
 
 }
-
-
 
 function theme2() {
     document.querySelectorAll('.button').forEach((integer, i) => {
