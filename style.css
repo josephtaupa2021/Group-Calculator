@@ -1,0 +1,117 @@
+
+        body {
+            background-image: linear-gradient(to right, rgba(49, 109, 128, 0.45), rgba(0, 4, 7, 0.95));
+        }
+
+        .main {
+            margin-top: -27%;
+            margin-left: 4cm;
+            height: 570px;
+            width: 45%;
+            box-shadow: 8px 4px 8px 4px rgba(23, 23, 24, 0.96);
+            border-radius: 4px 34px 4px 34px;
+            background-image: url("blackMustard.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        form input {
+            width: 11.4cm;
+            height: 80px;
+            font-size: 40px;
+            padding-left: 4%;
+            border: none;
+            cursor: pointer;
+            border: 20px 20px 20px 20px;
+            background-color: rgba(101, 112, 31, 0.47);
+        }
+
+        .resultview {
+            outline: none;
+            margin-left: 1.5cm;
+            margin-top: 3%;
+            background-image: linear-gradient(to left, #ADADA3, #AAA8A1);
+            border-radius: 10px;
+        }
+
+        table {
+            background-color: rgba(59, 48, 100, 0.07);
+            width: 10.8cm;
+            margin-top: 0%;
+            margin-left: 2cm;
+            border-radius: 20px 20px 20px 20px;
+        }
+
+        td input {
+            margin: 5%;
+            height: 70px;
+            width: 100%;
+            font-size: 15px;
+            font-style: italic;
+            font-family: cursive;
+            border-color: rgba(189, 162, 41, 0.28);
+            border-radius: 40px 40px 40px 40px;
+            cursor: pointer;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.87);
+            color: #f3ca20;
+
+        }
+
+        td input:hover {
+            opacity: 0.5;
+        }
+
+        td input:active {
+            font-size: 25px;
+            background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));
+            color: black;
+        }
+
+        .op-btn {
+            border-color: #8B7A53;
+            background-color: rgba(243, 201, 32, 0.75);
+            color: black;
+        }
+
+        .theme:hover {
+            box-shadow: 8px 4px 8px 4px rgba(121, 121, 116, 0.12);
+            font-size: 20px;
+            color: rgba(214, 214, 214, 0.705)
+        }
+
+        .theme {
+            background-color: rgba(179, 138, 91, 0.02);
+            border: 5;
+            font-size: 15px;
+            height: 100px;
+            width: 20%;
+            border-radius: 10%;
+            outline: none;
+            border-style: none;
+            border-color: rgb(247, 242, 242);
+            border-style: solid;
+            transition-delay: 0.2s;
+            color: ghostwhite;
+            margin-left: 22cm;
+            margin-top: 2%;
+        }
+
+
+        #theme1 {
+            background-image: url('blackMustard.jpg');
+        }
+
+        #theme2 {
+            background-image: url('maroon.jpg')
+        }
+
+        #theme3 {
+            background-image: linear-gradient(to left, rgba(179, 138, 91, 0.5), rgba(130, 144, 121, 0.77))
+        }
+
+        .theme-container {
+            margin-top: 0;
+            margin-left: 10%;
+        }
+
