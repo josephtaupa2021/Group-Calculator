@@ -56,13 +56,13 @@
             background-color: rgba(0, 0, 0, 0.87);
             color: #f3ca20;
 
-        }
+        }   
 
         td input:hover {
             opacity: 0.5;
         }
 
-        td input:active {
+        td input:focus {
             font-size: 25px;
             background-image: linear-gradient(to left, rgba(248, 248, 239, 0.73), rgba(124, 123, 120, 0.73));
             color: black;
@@ -115,3 +115,56 @@
             margin-left: 10%;
         }
 
+
+        #pressSquare .hint {
+            visibility:hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          p{
+              width: 2cm;
+              margin-top:47%;
+              padding-left: .5%;
+              visibility: hidden;
+             font-size: 15px;
+             color:#0C0C0C;
+             margin-left: 85%;
+             margin-top: -55%;
+             background-color: rgba(255, 255, 255, 0.64);
+             border-radius: 10px 10px 10px 10px;
+             
+          }
+         
+         
+        /*  
+          #pressSquare  span::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+          }
+          .hides:hover hint {
+            visibility:visible;
+            opacity: 1;
+            font-size: 50px;
+            
+          }
+*/
+
+          
