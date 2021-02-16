@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+
+</head>
+
+
+<body>
+        
+    
+       
+    
+    <div class="theme-container">
+        <button id="theme1" class="theme" onclick="theme1()">Mustard Black</button>
+        <button id="theme2" class="theme" onclick="theme2()">Blue Maroon Indigo</button>
+        <button id="theme3" class="theme" onclick="theme3()">Olive Beige Tan</button>
+    </div>
+    <div class="main" id="main">
+           
+        <form name="form">
+            <input id="resultview" class="resultview" name="resultview" placeholder="0" disabled>
+        </form>
+
+        <table class="calculation">
+            <tr>
+                <td colspan="1"><input id="pressAc" class="op-btn" type="button" onclick="Clear()" value="AC"></td>
+                <td colspan="1"><input id="pressDiv" class="op-btn" type="button" onclick="insert('/')" value="÷"></td>
+                <td colspan="1"><input id="pressMul" class="op-btn" type="button" onclick="insert('*')" value="*"></td>
+                <td colspan="1"> <input id="pressDel" class="op-btn" type="button" onclick="back()" value="DEL"></td>
+            </tr>
+            <tr>
+                <td><input id="pressSeven" class="button" type="button" onclick="insert(7)" value="7"></td>
+                <td><input id="pressEight" class="button" type="button" onclick="insert(8)" value="8"></td>
+                <td><input id="pressNine" class="button" type="button" onclick="insert(9)" value="9"></td>
+                <td id="containerHint" class="hint-container"><input id="pressSquare" class="op-btn" type="button"
+                        onclick="resultview.value=Math.sqrt(resultview.value)"  value="√" onmouseover="mouseOver()" onmouseout="mouseOut()"> 
+                        
+                </td>
+               
+                                       
+            </tr>
+            
+            <tr>
+                <td><input id="pressFour" class="button" type="button" onclick="insert(4)" value="4"></td>
+                <td><input id="pressFive" class="button" type="button" onclick="insert(5)" value="5"></td>
+                <td><input id="pressSix" class="button" type="button" onclick="insert(6)" value="6"></td>
+                <td><input id="pressPlus" class="op-btn" type="button" onclick="insert('+')" value="+"></td>
+            </tr>
+            <tr>
+                <td><input id="pressOne" class="button" type="button" onclick="insert(1)" value="1"></td>
+                <td><input id="pressTwo" class="button" type="button" onclick="insert(2)" value="2"></td>
+                <td><input id="pressThree" class="button" type="button" onclick="insert(3)" value="3"></td>
+                <td><input id="pressMinus" class="op-btn" type="button" onclick="insert('-')" value="-"></td>
+            </tr>
+            <tr>
+                <td><input id="pressDot" class="button" type="button" onclick="insert('.')" value="."></td>
+                <td><input id="pressZero" class="button" type="button" onclick="insert(0)" value="0">
+                </td>
+                <td colspan="2"><input id="pressEqual" class="op-btn" type="button" onclick="equal()" value="=">
+                </td>
+            </tr>
+            
+        </table>
+        <p id="para">Press S on keyboard</p>
+    </div>
+
+</body>
+
+</html>
